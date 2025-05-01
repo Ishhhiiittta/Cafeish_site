@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Café Luxe - Grand Opening</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background-color: #000;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+      padding: 20px;
+      overflow-x: hidden;
+    }
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+      animation: fadeInDown 1s ease-out;
+    }
+    h2 {
+      font-size: 2rem;
+      margin: 0.2rem 0 1rem;
+      animation: fadeInDown 1.2s ease-out;
+    }
+    .offers {
+      font-size: 1.2rem;
+      margin: 1rem 0;
+      animation: fadeInUp 1.4s ease-out;
+    }
+    .cta {
+      font-size: 1.1rem;
+      margin-top: 2rem;
+      font-weight: 300;
+      animation: fadeInUp 1.6s ease-out;
+    }
+    .footer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      animation: fadeInUp 1.8s ease-out;
+    }
+    .footer span {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    img {
+      max-width: 250px;
+      margin-top: 2rem;
+      animation: fadeIn 2s ease-out;
+    }
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @media (max-width: 600px) {
+      h1 { font-size: 2rem; }
+      h2 { font-size: 1.5rem; }
+      .offers, .cta, .footer { font-size: 1rem; }
+      img { max-width: 180px; }
+    }
+  </style>
+</head>
+<body>
+  <h1>Brewing Something Incredible</h1>
+  <h2>Café Luxe</h2>
+  <p>Now Open • 4th May</p>
+  <div class="offers">
+    <p>Freebies with every purchase over ₹100</p>
+    <p>Authentic taste, no compromise</p>
+    <p>Coffees from just ₹59</p>
+  </div>
+  <div class="cta">
+    <p>Experience the taste. Love the vibe.</p>
+    <p>Visit us and sip sophistication.</p>
+  </div>
+  <img src="coffee-cup.png" alt="Steaming Coffee Cup" />
+  <div class="footer">
+    <span>📍 Location</span>
+    <span>📸 Instagram</span>
+    <span>☎️ Contact Info</span>
+  </div>
+</body>
+</html>
